@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>외대 식물원</title>
+    <meta name="description" content="외대식물원(가상) 소개와 전시 행사 안내 페이지"> 
+
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="icon" type="image/png" href="Images/Fabicon.png">
+    
+    <style>
+        /* 폰트 세팅 */
+        @font-face{
+            font-family: 'maplestory';
+            src: url('Images/Fonts/MaplestoryFont_TTF/Maplestory\ Bold.ttf')
+            format('truetype');
+            font-weight: bold;
+            font-style: normal;
+        }
+        @font-face{
+            font-family: 'maplestory';
+            src: url('Images/Fonts/MaplestoryFont_TTF/Maplestory\ Light.ttf')
+            format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        /*클래스 지정*/
+        .logo{
+            width: 96px;
+            height: 96px;
+            margin-top: 14px;
+            
+            
+        }
+        .page-header{
+            font-family: maplestory;
+            background: rgba(255, 255, 255, 0.50)
+
+        }
+        .main-nav{
+            display: flex;
+            font-size: 1.25rem;
+            text-transform: uppercase;
+            margin-top: 34px;
+            list-style: none;
+            
+        }
+        .main-nav li{
+            margin-left: 36px;
+            
+        }
+        .main-nav a{
+            color: #432;
+        }
+        .main-nav a:hover{
+            color: #ADCACB;
+        }
+        .page-header{
+            display: flex;
+            align-items: center;
+
+        }
+        .wrapper{
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 2%;
+        }
+        .page-header span{
+            color: #ADCACB;
+            display: flex;
+            font-size: 2rem;
+            font-weight: bold;
+            padding-left: 2%;
+            padding-right: 12%;
+        }
+        .big-bg{
+            background-size: cover;
+            background-position: center top;
+        }
+        .Seasons{
+            height: 512.5px;
+        }
+        .container{
+            display: flexbox;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
+        .container img{
+            max-height: 448px;
+            float: left;
+            padding-left: 6%;
+            padding-top: 6%;
+        }
+        .container span{
+            font-family: 'maplestory';
+            font-size: 48px;
+            height: 200;
+            color: #fff;
+
+            
+        }
+
+        /*요소 지정*/
+        a{
+            text-decoration-line: none;
+        }
+        header{ /*상단 바 고정*/
+            position: fixed;
+            top: 0;
+            width: 100%;
+            left: 0;
+            right: 0;
+        }
+        footer{
+            background: #058240;
+            text-align: center;
+            padding: 26px 0;
+        }
+        footer p{
+            color: #fff;
+            font-size: 0.875rem;
+        }
+        /*id 지정*/
+        #home{
+            background-image: url(images/MainImage.gif);
+            min-height: 100vh;
+        }
+        #Spring{
+            background: #87C159;
+        }
+        #Summer{
+            background: #FEE3A2;
+        }
+        #Fall{
+            background: #F3C301;
+        }
+        #Winter{
+            background: #ADCACB;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div id="home" class="big-bg">
+        <header class="page-header wrapper">
+            <h1 id="logoTitle"><a href="201701890_WebDesign.html"> <img class="logo" src="Images/Fabicon.png" alt="외대 식물원 타이틀"></a></h1>
+            <span>외대식물원<br>Hufs Botanic Park</span>
+            <nav>
+                
+                <ul class="main-nav">
+                    <li><a href="ExInfo.html">전시정보</a></li>
+                    <li><a href="PlantInfo.html">식물정보</a></li>
+                    <li><a href="Contact.html">고객센터</a></li>
+                </ul>
+            </nav>
+
+        </header>
+    </div>
+    <div class="container">
+        <div id="Spring" class="Seasons"><img src="images/Spring.gif" alt="봄"><span>봄<br>계획,그리고 시작의 계절</span></div>
+        <div id="Summer" class="Seasons"></div>
+        <div id="Fall" class="Seasons"></div>
+        <div id="Winter" class="Seasons"></div>
+    </div>
+    <footer>
+        <div class="wrapper">
+            <p><small>&copy; 2024 WebDesign</small></p>
+        </div>
+    </footer>
+
+
+</body>
+</html>
